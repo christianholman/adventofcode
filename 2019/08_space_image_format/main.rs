@@ -49,7 +49,7 @@ fn part2(data: &InputData) {
     for row in sub_strings(&final_message, data.width) {
         let readable_row = row.chars().map(|c| match c {
             '0' => ' ',
-            '1' => '■',
+            '1' => '█',
             _ => '0',
         }).collect::<String>();
 
